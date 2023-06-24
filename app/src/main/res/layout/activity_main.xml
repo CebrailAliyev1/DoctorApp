@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icons_menu_burger"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="62dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/img_3"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="56dp"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="116dp"
+            android:text="@string/find"
+            android:textColor="@color/grey"
+            android:textSize="34sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="116dp"
+            android:text="@string/a"
+            android:textSize="34sp"
+            android:visibility="invisible"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="116dp"
+            android:layout_marginEnd="92dp"
+            android:text="@string/your_doctor"
+            android:textColor="@color/grey_2"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textView3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:background="@drawable/label_search"
+            android:hint="@string/search_doctor_medicines_etc"
+            android:letterSpacing="0.014"
+            android:layout_marginTop="24dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            android:paddingStart="16dp"/>
+
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/search"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="35dp"
+            android:id="@+id/grid">
+
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:background="@drawable/ic_consultation__1_"/>
+
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:background="@drawable/ic_dental__1_"
+                android:layout_marginStart="34dp"
+                />
+
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:background="@drawable/ic_heart__1_"
+                android:layout_marginStart="34dp"
+                />
+
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_row="0"
+                android:layout_column="3"
+                android:background="@drawable/ic_hospitals__1_"
+                android:layout_marginStart="35dp"
+                />
+
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:background="@drawable/ic_medicines__1_"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="6dp"
+                />
+
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:background="@drawable/ic_physician__1_"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="34dp"
+                />
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:background="@drawable/ic_skin__1_"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="34dp"
+                />
+
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_row="1"
+                android:layout_column="3"
+                android:background="@drawable/ic_surgeon__1_"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="35dp"
+                />
+
+        </GridLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/top_doctors"
+            android:textColor="@color/grey_3"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/grid"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="24dp"
+            android:textStyle="bold"
+            android:id="@+id/top_doctor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/grid"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/view_all"
+            android:layout_marginTop="33dp"
+            android:layout_marginEnd="24dp"
+            android:textSize="11sp"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_doctor"
+        android:layout_marginTop="27dp"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recyclerView"/>
+
+
+    </ScrollView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+

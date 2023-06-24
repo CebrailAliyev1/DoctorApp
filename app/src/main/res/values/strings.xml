@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DoctorTask</string>
+    <string name="find">Find</string>
+    <string name="your_doctor">your doctor</string>
+    <string name="search_doctor_medicines_etc">Search doctor, medicines etc</string>
+    <string name="a">a</string>
+    <string name="top_doctors">Top Doctors</string>
+    <string name="view_all">View all</string>
+</resources>

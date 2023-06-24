@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#25282B</color>
+    <color name="grey_2">#A0A4A8</color>
+    <color name="grey_3">#25282B</color>
+    <color name="blue">#4485FD</color>
+    <color name="text">#404345</color>
+    <color name="red_blue_text">
+        <span style="color:red;">Bu bir </span>
+        <span style="color:blue;">örnek metin</span>
+    </color>
+
+</resources>
